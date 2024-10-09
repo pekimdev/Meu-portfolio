@@ -17,7 +17,7 @@
 
 .container {
   display: grid;
-  text-align: center;
+ text-align: center;
 }
 
 .text-intro {
@@ -84,6 +84,33 @@ a:hover .image-logo {
   justify-content: space-evenly;
   box-shadow: 0 0 0.8125rem 0 rgba(0, 0, 0, 0.75);
 }
+
+#formation {
+  background: linear-gradient(
+    145deg,
+    rgb(177, 153, 210) 15%,
+    rgba(133, 154, 188, 1) 50%,
+    rgb(122, 96, 159) 85%
+
+  );
+  box-shadow: 0 0 0.8125rem 0 rgba(255, 255, 255, 0.75);
+  padding-bottom: 5rem;
+
+}
+
+#grid-formation {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+#grid-formation ul {
+  list-style: none;
+
+}
+
+
 
 .type {
   font-size: 1rem;
@@ -167,6 +194,55 @@ a:hover .image-logo {
   box-shadow: 0 0 0.8125rem 0 rgba(0, 0, 0, 0.75);
 }
 
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.form-group input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.form-group  {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#contacts button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(50, 100, 80);
+  border: solid 1px white;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+#contacts button:hover {
+  background-color: #ffffff;
+  color: rgb(50, 100, 80);
+  border: solid 1px black;
+
+}
+
 .p-aboutme {
   max-width: 600px;
   line-height: 2rem;
@@ -184,6 +260,20 @@ a:hover .image-logo {
   color: white;
   margin-bottom: 1rem;
   margin-top: 5rem;
+  text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.links-href {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.link-title {
+  color: white;
   text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
   text-decoration: underline;
   text-underline-offset: 6px;

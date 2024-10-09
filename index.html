@@ -14,6 +14,7 @@
     />
   </head>
   <body>
+    <!--1 container e 5 sections. Cada section tem blocos de conteúdo com display flex ou display grid.-->
     <div class="container">
       <section id="introduction">
         <h2 class="text-intro">Olá, eu sou o Gabriel Pekim</h2>
@@ -26,12 +27,18 @@
             <img src="/assets/img/linkedin-white.png" class="image-logo" />
           </a>
           <a
-            href="https://drive.google.com/file/d/1y_j9U7ohICeR781G71765JxPyfH6ccFk/view"
+            href="https://drive.google.com/file/d/1kFgmLmzwmuryyVWvvzfp7XRA-OO6lEsT/view"
             target="_blank"
           >
             <img src="/assets/img/icon-document.png" class="image-logo" />
           </a>
         </div>
+      <div class="links-href">
+        <a class="link-title" href="#projects">Portfólio</a>
+        <a class="link-title" href="#about-me">Sobre mim</a>
+        <a class="link-title" href="#formation">Formação</a>
+        <a class="link-title" href="#contacts">Contato</a>
+      </div>
       </section>
       <section id="projects">
         <div class="project">
@@ -104,9 +111,8 @@
             <div class="p-aboutme">
               <img src="/assets/img/pekim-logo.png" width="200px"/>
               <p>
-                Eu sou o Gabriel e atualmente moro no Rio de Janeiro. Estou na área desde 2022 e tenho trabalhado como freelancer há 10 meses.
-                Formado em Programação Web - Fullstack do curso Programadores Cariocas do Senac/RJ em parceria com a prefeitura do Rio, em objetivo de tornar o Rio a capital da Inovação e Tecnologia.
-                De lá pra cá tenho ganhado experiência com projetos, freelance e mais cursos para capacitação, tendo conhecimentos especializados em <b>React, Node.js, Express, Next.js, MySQL, Sequelize, TailwindCSS</b>. Busco minha oportunidade para desenvolver minha senioridade e agregar em empresas que solicitam o meu trabalho.
+                Eu sou o Gabriel e atualmente moro no Rio de Janeiro. Estou estudando programação desde 2022 e atuamente estou estagiando na Newfy.
+                Tenho interesse na area de TI, gosto de futebol, academia, música, filmes, séries, etc.
               </p>
             </div>
             <div class="image-and-links">
@@ -118,7 +124,7 @@
                   <img src="/assets/img/linkedin-white.png" />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1y_j9U7ohICeR781G71765JxPyfH6ccFk/view"
+                  href="https://drive.google.com/file/d/1kFgmLmzwmuryyVWvvzfp7XRA-OO6lEsT/view"
                   target="_blank"
                   >
                 <img src="/assets/img/icon-document.png"/>
@@ -128,12 +134,52 @@
               </div>
           </div>
         </section>
+        <section id="formation">
+          <h1 class="title-aboutme">Formação</h1>
+          <div id="grid-formation">
+
+            <div class="p-aboutme">
+              <h2 style="margin-bottom: 1rem;">Cursos e certificações</h2>
+              <ul>
+                <li>Ensino técnico integrado ao médio - CEFET/RJ</li>
+                <li>Programadores Cariocas - SENAC/RJ</li>
+                <li>Análise e Desenvolvimento de Sistemas - UNINTER (Graduando)</li>
+                <li>Sistemas de Computação - UFF (Graduando)</li>
+             <li>Gestão e automações de processos - Pipefy</li>
+             <li>AWS Essentials Practitionier</li>
+            </ul>
+          </div>
+          <div class="p-aboutme">
+            <h2 style="margin-bottom: 1rem;">Conhecimentos</h2>
+            <ul>
+              <li>Inglês instrumental</li>
+              <li>Front-end com foco em HTML, CSS, JavaScript,
+                Tailwind, React e Next.js</li>
+              <li>Back-end com foco em Node.js, MySQL e Docker</li>
+              <li>Versionamento de código com GIT e Github.</li>
+              <li>Experiência de DNS e hospedagem com a Vercel</li>
+            </ul>
+          </div>
+        </div>
+
+        </section>
         <section id="contacts">
             <div class="contact">
-              <img src="/assets/img/whatsapp-icon.png" width="50px"/>
-              <a href="https://api.whatsapp.com/send?phone=5521969680095" target="_blank">
-                <p>(21) 96968-0095</p>
-              </a>
+              <form>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email-contact" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
             </div>
             <div class="contact">
               <img src="/assets/img/email-icon.png" width="50px"/>
